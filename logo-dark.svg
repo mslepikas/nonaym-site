@@ -10,10 +10,32 @@
       <stop offset="100%" style="stop-color:#c8d4e8;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <path d="M16,10 L30,18 L30,33 C30,42 23,49 16,53 C9,49 2,42 2,33 L2,18 Z"
-        fill="none" stroke="#e8edf5" stroke-width="1.5"/>
+
+  <!-- Mask icon: two halves of a face with eye cutouts -->
+  <!-- Left half of mask -->
+  <path d="M14,8 C14,8 6,10 6,22 C6,30 10,38 14,44 C14,44 10,36 8,28 C6,20 8,14 14,8Z"
+        fill="#e8edf5" opacity="0.95"/>
+  <!-- Left eye cutout -->
+  <path d="M10,18 C10,18 12,17 14,18 C16,19 16,21 14,22 C12,21 10,20 10,18Z"
+        fill="#111419"/>
+  <!-- Right half of mask -->
+  <path d="M18,8 C18,8 26,10 26,22 C26,30 22,38 18,44 C18,44 22,36 24,28 C26,20 24,14 18,8Z"
+        fill="#e8edf5" opacity="0.95"/>
+  <!-- Right eye cutout -->
+  <path d="M20,18 C20,18 22,17 24,18 C26,19 26,21 24,22 C22,21 20,20 20,18Z"
+        fill="#111419"/>
+  <!-- Bridge between halves -->
+  <path d="M14,8 C14,12 16,12 18,8 L18,4 C18,4 16,6 14,6Z"
+        fill="#e8edf5" opacity="0.95"/>
+  <!-- Top curve / head outline -->
+  <path d="M10,8 C12,4 20,4 22,8"
+        fill="none" stroke="#e8edf5" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- "no" in bright green -->
   <text x="12" y="80" font-family="'Arial Rounded MT Bold', 'Nunito Sans', Arial, sans-serif"
         font-size="58" font-weight="900" fill="url(#greenGrad)">no</text>
+
+  <!-- "naym" in bright blue/white -->
   <text x="82" y="80" font-family="'Arial Rounded MT Bold', 'Nunito Sans', Arial, sans-serif"
         font-size="58" font-weight="900" fill="url(#whiteGrad)">naym</text>
 </svg>
