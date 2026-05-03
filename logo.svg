@@ -17,9 +17,9 @@
 
   <!-- "no" in green -->
   <text x="12" y="80" font-family="'Arial Rounded MT Bold', 'Nunito Sans', Arial, sans-serif"
-        font-size="58" font-weight="700" fill="url(#greenGrad)">no</text>
+        font-size="58" font-weight="900" fill="url(#greenGrad)">no</text>
 
   <!-- "naym" in dark navy -->
   <text x="82" y="80" font-family="'Arial Rounded MT Bold', 'Nunito Sans', Arial, sans-serif"
-        font-size="58" font-weight="700" fill="url(#navyGrad)">naym</text>
+        font-size="58" font-weight="900" fill="url(#navyGrad)">naym</text>
 </svg>
