@@ -1,12 +1,25 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<!-- Nonaym Landing Page v1.0 -->
+<!-- HTML Version: 1.0 | Last Updated: 2026-05-04 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nonaym - Privacy-first DNS Appliance</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            /* NONAYM BRAND — Green accent palette
+               Primary green: #A5F20A (neon lime from logo)
+               Darker: #7CCB00 (shadows/depth)
+               Lighter: #C8FF2A (highlights)
+               Swap logo: replace logo/current.png */
+            --green-primary: #A5F20A;
+            --green-dark: #7CCB00;
+            --green-light: #C8FF2A;
+            --green-glow: rgba(165, 242, 10, 0.3);
+        }
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
@@ -28,6 +41,7 @@
         }
         header img {
             height: 40px;
+            filter: brightness(0.9);
         }
         nav {
             display: flex;
@@ -37,20 +51,25 @@
             color: #c8d0dc;
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--green-primary);
         }
         .cta-button {
             padding: 10px 20px;
             border-radius: 9999px;
-            border: 2px solid #00b8d4;
+            border: 2px solid var(--green-primary);
             background: transparent;
-            color: #00b8d4;
+            color: var(--green-primary);
             font-weight: 700;
             cursor: pointer;
-            transition: background 0.3s, color 0.3s;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
         }
         .cta-button:hover {
-            background: #00d4ff;
+            background: var(--green-primary);
             color: #0a1520;
+            box-shadow: 0 0 15px var(--green-glow);
         }
         .hero {
             height: 100vh;
@@ -65,7 +84,7 @@
         .hero-logo {
             max-width: 280px;
             margin-bottom: 20px;
-            filter: brightness(0.85) contrast(0.9);
+            filter: brightness(0.95) drop-shadow(0 0 8px var(--green-glow));
         }
         .hero h1 {
             font-family: 'Space Grotesk', sans-serif;
@@ -78,20 +97,20 @@
             margin: 10px 0 30px;
         }
         .hero .cta-button-primary {
-            background: linear-gradient(90deg, #00b8d4, #0077b6);
+            background: linear-gradient(90deg, var(--green-primary), var(--green-dark));
             color: #0a1520;
             border: none;
             margin-left: 10px;
         }
         .hero .cta-button-primary:hover {
-            box-shadow: 0 0 15px rgba(0,184,212,0.4);
+            box-shadow: 0 0 20px var(--green-glow);
         }
         .scroll-indicator {
             position: absolute;
             bottom: 20px;
             width: 30px;
             height: 30px;
-            border: 2px solid #00b8d4;
+            border: 2px solid var(--green-primary);
             border-radius: 50%;
             animation: bounce 2s infinite;
         }
@@ -119,7 +138,11 @@
             border: 1px solid #1f2838;
             border-radius: 12px;
             padding: 20px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--green-primary);
         }
         .card:hover {
             transform: translateY(-4px);
@@ -148,6 +171,10 @@
             border-radius: 12px;
             padding: 20px;
             text-align: left;
+            transition: border-color 0.3s;
+        }
+        .pricing-card:hover {
+            border-color: var(--green-primary);
         }
         .pricing-card h3 {
             font-family: 'Space Grotesk', sans-serif;
@@ -170,8 +197,12 @@
             color: #c8d0dc;
         }
         footer a {
-            color: #00b8d4;
+            color: var(--green-primary);
             text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--green-light);
         }
         @media (max-width: 768px) {
             .grid-3 {
@@ -185,7 +216,8 @@
 </head>
 <body>
     <header>
-        <img src="./logo.svg" alt="Nonaym">
+        <!-- SWAP LOGO: logo v2.0 — replace current.png to change the logo -->
+        <img src="./logo/current.png" alt="Nonaym">
         <nav>
             <a href="#products">Products</a>
             <a href="#features">Features</a>
@@ -195,7 +227,8 @@
         </nav>
     </header>
     <section class="hero">
-        <img src="./logo.svg" alt="Nonaym" class="hero-logo">
+        <!-- SWAP LOGO: logo v2.0 — replace current.png to change the hero logo -->
+        <img src="./logo/current.png" alt="Nonaym" class="hero-logo">
         <h1>Your smart home is telling on you.</h1>
         <p>Every connected device leaves clues about your life — what you watch, when you're home, when you're away, and what your family cares about. no naym helps keep that profile from being built so easily.</p>
         <div>
