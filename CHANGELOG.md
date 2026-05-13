@@ -1,9 +1,12 @@
 # nonaym.ai Changelog
 
-## v1.2.0-build001 — Proposed
-- Add homepage clarity section for Nonaym DIY, Nonaym Lite, and future Nonaym AI.
+## v1.2.0-build001 — Sandbox proposed
+- Add homepage section titled "Choose your path" for Nonaym DIY, Nonaym Lite, and future Nonaym AI.
 - Use plain consumer language and avoid DNS jargon.
-- Status: proposed, not approved, not committed for deployment, not deployed.
+- Change public product pricing to TBD.
+- Add contact/RFQ form target for future Cloudflare backend at /api/leads.
+- Remove public infrastructure note from contact/RFQ form after Danno review.
+- Status: Danno PASS with public note removed; Cloudflare form backend not yet wired, not approved for real repo commit, not pushed, not deployed.
 
 ## v1.1.0 — Approved
 - Logo v3.0.

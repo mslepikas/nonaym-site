@@ -2,10 +2,10 @@
 
 Site: nonaym.ai
 Current approved version: v1.1.0
-Current sandbox build: none
+Current sandbox build: v1.2.0-build001
 Next planned sandbox build: v1.2.0-build001
 Last approved/base commit: d2c31d5
-Deployment status: approved/current live site
+Deployment status: approved/current live site; v1.2.0-build001 in sandbox review, Cloudflare form backend not yet wired
 GitHub remote: git@github.com:mslepikas/nonaym-site.git
 
 ## Versioning Convention
